@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>javascript</title>
+	<script type="text/javascript" src="e.js"></script>
+</head>
+<body>
+
+	<div id="result"></div>
+	<div id="result1"></div>
+	<button id="btn">yansit</button>
+	
+	<input type="button" value="print()" onClick="Call()" >
+	<script type="text/javascript">
+		
+  /*var x,y;
+
+  x=6;
+  y=5;
+
+  if (x>y && x!=y) {
+
+    document.getElementById('result1').innerHTML ="dogru"
+}else{ 
+	   document.getElementById("result1").innerHTML ="yanlis"
+
+  }*/
+
+ /* var x,y;
+
+ x=7;
+ y=9;
+
+ document.getElementById("result1").innerHTML=x+y;*/
+
+ /*var langs=["javascript","Emirhan","samagan","bahadir"];
+ var i;
+ for ( i = 0; i < langs.length;i++) */
+ 	
+ 
+
+ /*document.getElementById('result1').innerHTML += langs[i]+"<br>";*/
+
+/*function Call(par) {
+
+document.getElementById("result").innerHTML="Js icerde nasil ama? "
+
+document.write()
+
+alert("siteye hosgeldiniz");
+}
+
+
+for (var i = 0; i < 5; i++) {
+	
+	document.write(i+"java"+"<br>");
+
+}*/
+
+/*
+ var metin = "Yusuf SEZER";
+  alert(metin.split(""));
+
+  var metin = "Yusuf SEZER";
+  alert(metin.charCodeAt(6));
+
+  var metin = "Yusuf SEZER";
+  alert(metin.charAt(6));
+
+   var metin = "Merhaba ben Sefa SEZER";
+  alert(metin.replace("Sefa", "Yusuf"));
+
+  var x = 2;
+  while(x != Infinity) {
+    x = x * x;
+    alert(x);
+  }
+
+  var xSayisi = 1453;
+  alert(xSayisi.toString());
+  alert((1453).toString());
+  alert((1400 + 53).toString());
+
+  var xSayisi = "14.53";
+  alert(Number(xSayisi));
+  alert(Number(true));
+  alert(Number(false));
+  alert(Number(new Date()));
+  alert(Number("  10"));
+  alert(Number("10  "));
+  alert(Number("10 20"));
+
+  alert(Math.round(4.7)); // 5 Math.round fonksiyonu parametre olarak verilen ondalıklı sayıya en yakında tam sayıyı değerini verir.
+  alert(Math.round(4.4)); // 4
+
+  alert(Math.pow(4, 2)); // 16 Math.pow(x, y) fonksiyonu x değerini y değeri kadar çarpar.
+
+   alert(Math.sqrt(144)); // 12 Math.sqrt fonksiyonu parametre olarak verilen sayının karekökünü verir.
+
+     alert(Math.ceil(4.1)); // 5 Math.ceil fonksiyonu parametre olarak verilen ondalıklı sayıyı yukarı yuvarlar.
+
+      alert(Math.floor(4.9)); // 4 Math.floor fonksiyonu parametre olarak verilen ondalıklı sayıyı aşağı yuvarlar.
+
+       alert(Math.min(0, 30, 359, 100, -1, -100)); // -100 Math.min fonksiyonu parametre olarak verilen sayılar arasında en küçük sayıyı verir.
+
+        alert(Math.max(0, 30, 359, 100, -1, -100)); // 359 Math.max fonksiyonu parametre olarak verilen sayılar arasında en büyük sayıyı verir.
+
+          alert(Math.random()); //Math.random fonksiyonu 0 ile 1 arasında rastgele sayı üretir.
+
+           var tarih = new Date("Jan 01, 2000 10:25:00");
+  alert(tarih); // Tarih nesnesi tarihi parametre alarak oluşturulursa parametre olarak girilen tarih bilgisini verir. */
+
+   var liste = ["Elma", "Armut", "Portakal"];
+  alert(liste.length); // dizi uzunluk özelliği
+  alert(liste.sort())  // dizi sıralama fonksiyonu
+
+   var liste = ["Elma", "Armut", "Portakal"];
+  liste.push("Muz");
+  alert(liste); // Diziye yeni bir eleman eklemek için push fonksiyonu kullanılabilir.
+
+  var liste = ["Elma", "Armut", "Portakal"];
+  alert(liste);
+  liste.shift();
+  alert(liste); // Dizinin ilk elemanını kaldırmak için shift fonksiyonu kullanılır. fonksiyonu çıkarılan elamanın değerini verir.
+
+  var liste = ["Elma", "Armut", "Portakal"];
+  alert(liste);
+  delete liste[1];
+  alert(liste); // JavaScript dizileri nesnelerin özel bir türü olarak tanımladığından JavaScript delete anahtar kelimesi ile dizi elemanı silinebilir.
+
+  var liste = ["Elma", "Armut", "Portakal"];
+  var liste1 = ["Muz", "Kivi"];
+  var liste2 = ["Karpuz", "Çilek"]
+  var yeniListe = liste.concat(liste1, liste2);
+  alert(yeniListe);// concat fonksiyonu birden fazla diziyi birleştirebilir.
+
+  var liste = ["Elma", "Armut", "Portakal", "Muz", "Kivi"];
+  var yeniListe = liste.slice(1, 3);
+  alert(yeniListe);// slice fonksiyonuna iki parametre yazılabilir.
+
+İki parametre yazıldığında ilk parametreden başlayarak ikinci parametreye kadar olan elemanları alır.
+
+ var number1, number2, sum;
+
+  number1 = promt("Ilk rakami gir")//promt buluta yazi yazmayi saglar
+   number2 = promt("Ilk rakami gir")// bu sekil kulanim 2 sayiýi birlestirip verir
+
+    sum = number1 + number2;
+    alert("toplam" +sum)
+
+    number1 = promt("Ilk rakami gir")//
+   number2 = promt("Ilk rakami gir")
+
+    sum = parseInt(number1) + parseInt(number2);//       parsInt ozelligi  burda 2 sayiyi toplayarak verir
+    alert("toplam" +sum)
+
+    var tarih = new Date();
+  var gun = tarih.getDay();
+  switch(gun) {
+    case 0:
+      alert("pazar");
+    break;
+    case 6:
+      alert("cumartesi");
+    break;
+    default:
+      alert("henüz hafta sonu değil");
+  }//break anahtar kelimesi kod bloğundaki komutları sonlandırır ve sonraki koşulları karşılaştırmayı devre dışı bırakır.
+
+  </script>
+
+
+
+	
+
+
+
+</body>  
+</html>
